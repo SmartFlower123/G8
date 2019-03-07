@@ -24,7 +24,7 @@ class BaseLastWin extends fairygui.GComponent {
 	}
 	private playComplete(val: number) {
 		this.m_text.text = val.toFixed(0) + "";
-		this.m_daijiTrans.play();
+		this.m_daijiTrans.play(null,null,null,-1);
 		egret.setTimeout(() => {this.addClickListener(this.onClick, this); }, this, 1000);
 	}
 	private onClick() {
